@@ -1,0 +1,471 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.header{
+     min-height: 100vh;
+     width: 100%;
+     background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),url(images/website.jpg);
+     background-position: center;
+     background-size: cover;
+     position: relative;
+}
+.header img{
+    width: 70px;
+    margin-top: 0px;
+    margin-left: -78px;
+}
+nav{
+
+    display: flex;
+    padding: 2% 6%;
+    justify-content:space-between;
+    align-items:center;
+}
+
+ 
+
+.nav-links{
+      flex: 1;
+      text-align: right;
+     
+}
+.nav-links ul li{
+        list-style: none;
+        display:inline-block;
+        padding: 8px 12px;
+        position: relative;
+
+}
+.nav-links ul li a{
+    color:white;
+    text-decoration:solid;
+    font-size: 16px;
+    
+}
+.nav-links ul li::after {
+        content: '';
+        width: 0%;
+        height: 6px;
+        background: red ;
+        display:block;
+        margin: auto;
+        transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+     width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: aliceblue;
+    position: absolute;
+    top: 78%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align:center;
+}
+.text-box h1{
+    font-size: 60px;
+    line-height: 0.3;
+
+}
+.text-box p{
+    font-size:13px ;
+    margin:8px 0 30px;
+    color: white;
+    
+
+    
+
+}
+.button{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.button:hover{
+    border: 1px solid red;
+    background:red;
+    transform: 1s;
+}
+nav .fa{
+    display:none;
+}
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: red;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align:left;
+        z-index:2;
+        transition: 1s;
+    }
+    nav .fa{
+        display:block;
+        color:white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+        
+        
+    }
+    nav .fa{
+        display: block;
+        color:white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;  
+    }
+
+.fa-bars{
+   position: absolute;
+   top:20px;
+   right: 100px;
+
+}
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+
+/*----tech--*/
+.technology {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top:100px ;
+   
+  }
+   h1{
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 60px;
+
+
+    
+
+ }
+  p{
+    color:black;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    text-align: center;
+ }
+.row{
+    margin: 5%;
+    display: flex;
+    justify-content:space-between;
+    text-align: center;
+}
+.tech  {
+    flex-basis: 30%;
+    background:rgb(251, 249, 244);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align:center;
+    
+    margin: 30px ;
+}
+.tech:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.8);
+
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+    }
+  /*carrer*/
+.carrer-col{
+    flex-basis: 30%;
+    border-radius: 40px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.carrer-col img{
+    width: 100%;
+    
+}
+.apply{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 12px 34px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    margin: 20px;
+    
+}
+.apply:hover{
+    border: 1px solid red;
+    background:red;
+    transform: 1s;
+}
+/*digi*/
+.digi{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    
+
+}
+.digi-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    flex-basis: 30%;
+    background:rgb(249, 245, 245) ;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+
+}
+.digi-col img{
+    width: 100%;
+    border-radius: 10%;
+}
+.digi-col p{
+    padding: 0;
+   
+}
+.digi-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.digi-col:hover{
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.8);   
+    
+}
+.talk{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.talk-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 15%;
+    text-align: center;
+    background: rgb(240, 240, 213);
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+    transition: 0.5s;
+
+}
+.talk-col img{
+    height: 40px;
+    margin-left: 20PX;
+    margin-right: 30PX;
+    border-radius: 80PX;
+}
+.talk-col P{
+    padding: 0;
+    text-align: justify;
+}
+.talk-col h3{
+    margin-top: 15px;
+    text-align: right;
+}
+.talk-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.8);   
+}
+
+.talk-col .fa{
+    color:red;
+
+}
+@media(max-width: 600px){
+    .talk-col img{
+    margin-left: 0px;
+    margin-right: 15px;
+    }
+
+}
+.cta {
+    margin: 100px auto;
+    width: 80%;
+   
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(images/car.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 100px 0;
+    text-align:center;
+}
+.cta h1{
+    color: white;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.cta-1{
+    margin: 100px auto;
+    width: 80%;
+    
+  
+    padding: 100px 0;
+    text-align:center;
+}
+
+input::placeholder {
+display: flex;
+justify-content: flex-start;
+}
+
+::-ms-input-placeholder{
+
+}
+::-webkit-input-placeholder {
+
+} 
+
+@media(max-width: 700px){
+    .cta h1{
+      font-size: 24px;
+    }
+}
+/*-----footer-----*/
+.footer{
+    height: 35vh;
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+  background-color: rgb(243, 242, 241);
+  
+}
+.footer h4{
+    text-align: center;
+    margin-bottom:25px ;
+    margin-top: 20px;
+    font-weight: 600;
+  }
+  @media(max-width: 600px){
+    .footer{
+        font-size: 20px;
+    }
+  }
+.icon .fa{
+     color: red;
+     margin: 0 13px;
+     cursor: pointer;
+     padding: 18px 0;
+}
+.fa-heart-o{
+    color: red;
+}
+@media(max-width: 600px){
+    .footer h3{
+        font-size: 30px;
+    }
+    .footer p{
+      
+        font-size : 20px;
+    }
+}
+/*-----about us--*/
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/about.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: aliceblue;
+}
+.sub-header h1{
+    margin-top: 100px;
+}
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.about-col img{ 
+    width: 100%;
+  
+}
+.about-col h1{
+    padding-top: 0;
+  
+}
+.about-col p{
+    padding: 15px 0 25px;
+}
+.red{
+    border: 1px solid red;
+    background: transparent;
+    color: red;
+}
+.red:hover{
+    color: white;
+}
+
+
+.row-contact {
+    width: 400px;
+    margin: 0px auto;
+}
+@media(max-width: 600px){
+    .row-contact {width: 300px;
+    }
+}
+
+
+.input-field{
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #777;
+    border-radius: 14px;
+    outline: none;
+}
+.text-field {
+    
+    padding-top: 10px;
+}
+.card{
+    border-radius: 20px;
+    margin-top: 18px;
+    padding: 10px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    
+}
